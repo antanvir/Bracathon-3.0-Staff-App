@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:background="#ffffff">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="0dp" />
+
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:hint="Give an identity"
+            android:textColorHint="#6F6C6C" />
+
+        <Button
+            android:id="@+id/buttonLocShare"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:background="@drawable/loc_share2"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</RelativeLayout>

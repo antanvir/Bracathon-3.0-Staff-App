@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Firebase Authentication Test</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="somestr"></string>
+</resources>
