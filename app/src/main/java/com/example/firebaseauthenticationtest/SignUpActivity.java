@@ -100,10 +100,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                                         Toast.makeText(SignUpActivity.this, "Registration successful",
                                                 Toast.LENGTH_LONG).show();
 
-                                        finish();
-                                        Intent intent = new Intent(SignUpActivity.this, ProfileActivity.class);
-                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                        startActivity(intent);
+//                                        finish();
+//                                        Intent intent = new Intent(SignUpActivity.this, ProfileActivity.class);
+//                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                                        startActivity(intent);
 
                                         textUsername.setText("");
                                         textEmail.setText("");
@@ -136,7 +136,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         if(mAuth.getCurrentUser() != null){
             //handle already registered user
             //finish();
-            startActivity(new Intent(SignUpActivity.this, ProfileActivity.class));
+            //startActivity(new Intent(SignUpActivity.this, ProfileActivity.class));
         }
         else{
 

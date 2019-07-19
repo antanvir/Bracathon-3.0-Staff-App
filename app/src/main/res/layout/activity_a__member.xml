@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".A_MemberActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/mohila1"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:text="Halima Begum"
+        android:textColor="#F70B2538"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/vo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VO: Mirpur 1"
+        android:textColor="#F70B2538"
+        android:paddingLeft="30dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <TextView
+        android:id="@+id/emni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loan taken: 50 Thousand Taka\nInstalment per month: 5000"
+        android:paddingLeft="30dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/emni1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instalment 1: Properly given"
+        android:paddingLeft="30dp"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/emni12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instalment 2: Properly given"
+        android:paddingLeft="30dp"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TextView
+        android:id="@+id/emni123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instalment 3: Overdue"
+        android:paddingLeft="30dp"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        />
+
+
+</LinearLayout>

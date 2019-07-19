@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home_icon"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/instalment"
+        android:icon="@drawable/instalment1"
+        android:title="Instalment" />
+    <item
+        android:id="@+id/loc_share"
+        android:icon="@drawable/location_add"
+        android:title="Set VO Location" />
+    <item
+        android:id="@+id/my_VO"
+        android:icon="@drawable/business_vo"
+        android:title="My VOs" />
+
+        <item
+            android:id="@+id/teach"
+            android:icon="@drawable/tutorial"
+            android:title="Tutorial" />
+
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings"
+            android:title="Profile Settings" />
+
+    <item
+        android:id="@+id/sign_out"
+        android:icon="@drawable/logout"
+        android:title="Sign Out" />
+
+    </group>
+</menu>

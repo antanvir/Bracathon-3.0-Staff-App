@@ -95,7 +95,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                 progressBar.setVisibility(View.GONE);
 
 //                                Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
-                                Intent intent = new Intent(LoginActivity.this, MapsActivity.class);
+                                Intent intent = new Intent(LoginActivity.this, NavigationMainPage.class);
                                 intent.putExtra("arg", u_name);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                 startActivity(intent);
@@ -146,8 +146,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.textViewRegister:
-                finish();
-                startActivity(new Intent(this, SignUpActivity.class));
+                //finish();
+                startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
                 break;
 
             case R.id.btn_login:

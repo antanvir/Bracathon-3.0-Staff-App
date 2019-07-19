@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/a1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".NavigationMainPage"
+    tools:showIn="@layout/app_bar_navigation_main_page"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Welcome to\n Brac Microfinance Program"
+        android:textAlignment="center"
+
+        android:textColor="#F5F2F2"
+
+        android:textSize="20sp" />
+
+</LinearLayout>

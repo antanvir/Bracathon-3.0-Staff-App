@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark">#083D0F</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="below_good">#5CCF56</color>
+    <color name="good">#20AA15</color>
+    <color name="risky">#EE584E</color>
     <color name="colorCustom">#5EB3A987</color>
 </resources>

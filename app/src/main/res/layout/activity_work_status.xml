@@ -1,9 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/a1"
+    android:filterTouchesWhenObscured="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".WorkStatusActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Member ID"
+            android:inputType="text"
+            android:textColor="#F5F8F7"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/loan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textColor="#F5F8F7"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/instalmentNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Instalment No"
+            android:inputType="number"
+            android:textColor="#F5F8F7"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+       >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/instalmentAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Instalment Amount"
+            android:inputType="number"
+            android:textColor="#F5F8F7"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/exact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#1E2420"
+            android:text="Properly Given"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="OnClick" />
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton android:id="@+id/overdue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Missed"
+            android:textColor="#1E2420"
+            android:textSize="18sp"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="OnClick" />
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton android:id="@+id/less"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Less Amount Given"
+            android:textColor="#1E2420"
+            android:textSize="18sp"
+            android:onClick="onRadioButtonClicked"
+            tools:ignore="OnClick" />
+    </RadioGroup>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <CheckBox
+        android:id="@+id/savings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved Money"
+        android:textColor="#1E2420"
+        android:textSize="18sp"
+        android:checked="false" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/savingH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:errorEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/savingQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Savings Amount"
+            android:inputType="number"
+            android:textColor="#F5F8F7"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Any Comment (Optional)"
+            android:inputType="number"
+            android:textColor="#F5F8F7"
+            android:textSize="18sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/buttonDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#1D5A64"
+        android:text="Done"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+
+</LinearLayout>
