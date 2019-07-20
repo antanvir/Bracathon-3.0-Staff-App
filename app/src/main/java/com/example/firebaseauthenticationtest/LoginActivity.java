@@ -28,6 +28,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private FirebaseAuth mAuth;
     ProgressBar progressBar;
     DatabaseReference ref;
+    String u_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -151,7 +152,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
 
             case R.id.btn_login:
-                userSignIn();
+                //userSignIn();
+                Intent intent = new Intent(LoginActivity.this, NavigationMainPage.class);
+                intent.putExtra("arg", u_name);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
                 break;
         }
     }

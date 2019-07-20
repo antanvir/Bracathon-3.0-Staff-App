@@ -68,7 +68,7 @@ public class NavigationMainPage extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.navigation_main_page, menu);
+        getMenuInflater().inflate(R.menu.activity_navigation_main_page_drawer, menu);
         return true;
     }
 
@@ -80,9 +80,9 @@ public class NavigationMainPage extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -96,6 +96,7 @@ public class NavigationMainPage extends AppCompatActivity
 
         if (id == R.id.home) {
             // Handle the camera action
+            //startActivity(new Intent(NavigationMainPage.this, NavigationMainPage.class));
         } else if (id == R.id.instalment) {
             startActivity(new Intent(NavigationMainPage.this, WorkStatusActivity.class));
 
@@ -108,6 +109,9 @@ public class NavigationMainPage extends AppCompatActivity
 
         } else if (id == R.id.my_VO) {
             startActivity(new Intent(this, VOListActivity.class));
+
+        }else if (id == R.id.teach) {
+            startActivity(new Intent(this, TutorialActivity.class));
 
         } else if (id == R.id.sign_out) {
 

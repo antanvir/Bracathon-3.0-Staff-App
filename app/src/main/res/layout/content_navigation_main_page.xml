@@ -1,23 +1,281 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/simpleTableLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/a1"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".NavigationMainPage"
-    tools:showIn="@layout/app_bar_navigation_main_page"
-    >
+    android:stretchColumns="*"> <!-- stretch the second column of the layout-->
 
-    <TextView
+    <!-- first row of the table layout-->
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Welcome to\n Brac Microfinance Program"
-        android:textAlignment="center"
+        android:layout_height="60dp"
+        />
+    <TableRow
 
-        android:textColor="#F5F2F2"
+        android:id="@+id/heading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
 
-        android:textSize="20sp" />
+            android:id="@+id/heaingText"
+            android:layout_span="3"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CDE2B9"
+            android:padding="18dip"
+            android:text="Your Weekly Schedule"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+    </TableRow>
 
-</LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        />
+
+    <TableRow
+
+        android:id="@+id/tableHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!-- first element of the row-->
+        <TextView
+
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F790B190"
+            android:padding="18dip"
+            android:text="Day"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <TextView
+        android:id="@+id/voHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F790B190"
+        android:padding="18dip"
+        android:text="VO Name"
+        android:textColor="#000"
+        android:textSize="15dp" />
+
+        <TextView
+
+            android:id="@+id/membersHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F790B190"
+            android:padding="18dip"
+            android:text="No of Current Borrowers"
+            android:textColor="#000"
+            android:textSize="14dp" />
+    </TableRow>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        />
+
+    <TableRow
+
+        android:id="@+id/firstRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/day1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F7D3DAD3"
+            android:padding="18dip"
+            android:text="Sunday"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <!-- first element of the row-->
+        <TextView
+
+            android:id="@+id/vo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#b0b0b0"
+            android:padding="18dip"
+            android:text="Kuril"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <TextView
+
+            android:id="@+id/members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D5DEDF"
+            android:padding="18dip"
+            android:text="35"
+            android:textColor="#000"
+            android:textSize="14dp" />
+    </TableRow>
+
+    <TableRow
+
+        android:id="@+id/secondRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/day2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F7D3DAD3"
+            android:padding="18dip"
+            android:text="Sunday"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        <TextView
+
+            android:id="@+id/vo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#b0b0b0"
+            android:padding="18dip"
+            android:text="Mirpur-1"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <TextView
+
+            android:id="@+id/members2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D5DEDF"
+            android:padding="18dip"
+            android:text="22"
+            android:textColor="#000"
+            android:textSize="14dp" />
+    </TableRow>
+    <TableRow
+
+        android:id="@+id/thirdRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:id="@+id/day3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F7D3DAD3"
+            android:padding="18dip"
+            android:text="Monday"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <TextView
+
+            android:id="@+id/vo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#b0b0b0"
+            android:padding="18dip"
+            android:text="Shyamoli"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <TextView
+
+            android:id="@+id/members3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D5DEDF"
+            android:padding="18dip"
+            android:text="18"
+            android:textColor="#000"
+            android:textSize="14dp" />
+    </TableRow>
+    <TableRow
+
+        android:id="@+id/fourthRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/day5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F7D3DAD3"
+            android:padding="18dip"
+            android:text="Thursday"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+
+
+        <TextView
+
+            android:id="@+id/vo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#b0b0b0"
+            android:padding="18dip"
+            android:text="Badda"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <TextView
+
+            android:id="@+id/members4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D5DEDF"
+            android:padding="18dip"
+            android:text="35"
+            android:textColor="#000"
+            android:textSize="14dp" />
+    </TableRow>
+    <TableRow
+
+        android:id="@+id/fifthRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:id="@+id/day4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F7D3DAD3"
+            android:padding="18dip"
+            android:text="Wednesday"
+            android:textColor="#000"
+            android:textSize="15dp" />
+        <TextView
+
+            android:id="@+id/vo5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#b0b0b0"
+            android:padding="18dip"
+            android:text=" Mirpur-3"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <TextView
+
+            android:id="@+id/members5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#D5DEDF"
+            android:padding="18dip"
+            android:text=" 23"
+            android:textColor="#000"
+            android:textSize="14dp"
+            tools:ignore="DuplicateIds" />
+
+    </TableRow>
+</TableLayout>

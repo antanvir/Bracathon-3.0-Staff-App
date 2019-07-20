@@ -33,9 +33,9 @@ android:background="#ffffff">
 
         <Button
             android:id="@+id/buttonLocShare"
-            android:layout_width="50dp"
-            android:layout_height="45dp"
-            android:background="@drawable/loc_share2"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:background="@drawable/pin"
             android:textColor="#ffffff" />
     </LinearLayout>
 

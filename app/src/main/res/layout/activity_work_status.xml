@@ -6,13 +6,18 @@
     android:layout_height="match_parent"
     android:background="@drawable/a1"
     android:filterTouchesWhenObscured="true"
-    android:gravity="center"
+    android:gravity="top"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     tools:context=".WorkStatusActivity">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
